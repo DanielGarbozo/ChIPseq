@@ -104,13 +104,14 @@ Each run generates the following outputs under ´$WORK_DIR´:
 Each run creates date-stamped folders (´e.g., 2025_09_27-*´) for reproducibility.
 
 ### Common Structure
-$WORK_DIR/
-├── fastq/                → Raw input reads
-├── alignment/ or BAM/    → Aligned BAMs, non-aligned reads, trimming logs
-├── coverage/             → CPM-normalized and ChIP/Input bigWigs
-├── MACS2output/          → Peak calls (.narrowPeak, .summits.bed)
-├── quality_control/      → Fingerprint plots, read counts(FLAGS, SUMMARY), BLAST QC
-└── script/               → SLURM and runtime logs
+
+$WORK_DIR/  
+├── fastq/ → Raw input reads  
+├── alignment/ or BAM/ → Aligned BAMs, non-aligned reads, trimming logs  
+├── coverage/ → CPM-normalized and ChIP/Input bigWigs  
+├── MACS2output/ → Peak calls (.narrowPeak, .summits.bed)  
+├── quality_control/ → Fingerprint plots, read counts, BLAST QC  
+└── script/ → SLURM and runtime logs  
 
 ### Key Outputs
 
