@@ -12,9 +12,9 @@ Implementation:
 Daniel Garbozo - dg4739@nyu.edu
 Date: 10.2025
 
-Yuya Zhao - @nyu.edu
+Yuya Zhao - yz2954@nyu.edu
 Date: 02.2025
-Daniel Obaji - @nyu.edu
+Daniel Obaji - dno214@nyu.edu
 Date: ...
 
 Diogo Mesquita - dam740@nyu.edu  
