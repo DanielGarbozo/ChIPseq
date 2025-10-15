@@ -53,3 +53,82 @@ Sequenced reads were mapped to WS220/ce10 build of the C. elegans genome using B
 ## Tutorial
 
 See the tutorial on here![Tutorial_link](https://github.com/DanielGarbozo/ChIPseq/blob/master/docs/Tutorial-ErcanLab_ChIP-seq_analysis_v12.1_slurm.docx.pdf)
+
+
+## How to Contribute
+
+### 1. Fork the repository
+Go to the main repository on GitHub and click **“Fork”** to create your own copy under your account.
+
+### 2. Clone your fork
+```bash
+git clone <SSH link of your personal fork>
+cd ChIP
+```
+
+### 3. Add the main repository as upstream
+
+- This allows you to keep your fork updated and later create pull requests.
+```bash
+git remote add upstream <SSH link of the main repository>
+git remote -v
+```
+
+- You should see:
+```bash
+origin  git@github.com:DanielGarbozo/ChIPseq.git (fetch)
+origin  git@github.com:DanielGarbozo/ChIPseq.git (push)
+upstream        git@github.com:ercanlab/ChIPseq.git (fetch)
+upstream        git@github.com:ercanlab/ChIPseq.git (push)
+```
+### 4. Sync your local repo with the main branch
+
+To get the latest updates from the main repository:
+````bash
+git fetch upstream dev
+git merge upstream/main
+```
+(Use ONLY dev branch for contributions)
+
+### 5. Make your changes
+
+Perform your edits, add new scripts, or update documentation.
+
+Useful file operations:
+```bash
+git mv <old_name> <new_name>     # move or rename files
+git rm <file>                    # remove files
+```
+
+Check what has changed:
+```bash
+git status
+```
+
+### 6. Stage and commit your changes
+```bash 
+git add .                      # or specify files individually
+git commit -m "Update: improved ChIP-seq pipeline"
+```
+### 7. Push your changes to your fork
+
+```bash
+git push origin main
+```
+(or replace main with master depending on your branch name)
+
+### 8. Create a Pull Request
+
+- Go to your fork on GitHub.
+- Click “Compare & pull request.”
+- Add a clear title and description explaining your contribution.
+- Submit it for review 
+
+### Notes
+
+Keep your fork synchronized regularly:
+```bash
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
