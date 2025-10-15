@@ -24,7 +24,7 @@ Matt Paul - matthew.paul.2006@gmail.com
 Date: 04.2019
 
 ## ChIP pipeline flowchart overview
-![chip_pipeline_overview](https://github.com/ercanlab/ChIPseq/blob/master/docs/ChIP_pipeline_overview.pdf)
+![chip_pipeline_overview](https://github.com/ercanlab/ChIPseq/blob/master/docs/ChIP_pipeline_overview.jpg)
 
 ## Method Overview
 Sequenced reads were mapped to WS220/ce10 build of the C. elegans genome using Bowtie2 version 2.3.2 (Langmead and Salzberg, 2012). Standard mapping parameters were used for mapping with Bowtie 2. Duplicates above a expected cutoff were removed using MACS2 version 2.1.1 (Zhang, et al 2008). MACS2 determined the cutoff (typically above 1 or 2 copies) using a binomial distribution test with a p-value of 1e-5. Biological replicates were merged together with samtools (Li, et al 2009). Coverage was calculated over 100bp bins for Input subtracted ChIP enrichment scores/Chip to input ratio enrichment scores using deepTools version 3.02 (Ramírez, et al 2016). Peaks were called using MACS2. Peaks were defined using lenient settings for all biological replicates separately and using the strict settings for the merge of the biological replicates. Peaks were only considered to be true peaks if they were found in the merged replicate and in the majority of the separate replicates.
