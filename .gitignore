@@ -1,0 +1,54 @@
+# ============================================
+# GENERAL IGNORE RULES
+# ============================================
+
+# macOS
+.DS_Store
+
+# Temporary or editor files
+*.tmp
+*.bak
+*.swp
+*~
+*.log
+*.out
+slurm_*.out
+
+# Conda / environment files
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# ============================================
+# PIPELINE-SPECIFIC FOLDERS
+# ============================================
+
+# Input raw data
+fastq/
+fastqs/
+*.fastq
+*.fastq.gz
+
+# Alignment outputs
+alignment/
+*.sam
+*.bam
+*.bai
+*_sorted.bam
+*_sorted.bam.bai
+*_named.tmp.bam
+
+# Coverage / normalization
+coverage/
+*.bw
+*.bigwig
+
+# MACS2 peak calling
+MACS2output/
+*_peaks.*
+*_summits.bed
+*_model.r
+*_treat_pileup.bdg
+
