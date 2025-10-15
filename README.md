@@ -84,7 +84,7 @@ upstream        git@github.com:ercanlab/ChIPseq.git (push)
 ### 4. Sync your local repo with the main branch
 
 To get the latest updates from the main repository:
-````bash
+```bash
 git fetch upstream dev
 git merge upstream/main
 ```
